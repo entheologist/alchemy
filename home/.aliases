@@ -1,0 +1,40 @@
+## Colorize the ls output ##
+alias ls='ls --color=auto'
+ 
+## Use a long listing format ##
+alias ll='ls -la' 
+ 
+## Show hidden files ##
+alias l.='ls -d .* --color=auto'
+
+## get rid of command not found ##
+alias cd..='cd ..' 
+ 
+## a quick way to get out of current directory ##
+alias ..='cd ..' 
+alias ...='cd ../../../' 
+alias ....='cd ../../../../' 
+alias .....='cd ../../../../' 
+alias .4='cd ../../../../' 
+alias .5='cd ../../../../..'
+
+
+# install with apt-get
+alias apt-get="sudo apt-get" 
+alias updatey="sudo apt-get --yes" 
+ 
+# update on one command 
+alias update='sudo apt-get update && sudo apt-get upgrade'
+
+
+# GPG ALIASES
+alias gencrypt="gpg --encrypt --sign --armor -r $2 $1 -o $1.gpg "
+
+
+# Config Files
+alias edit_config="locate $1 | gedit"
+
+
+# Find functions
+alias find_dotfiles="find ~ -maxdepth 2 -name '.*'"
+alias find_gpg="find ~ -iname '*.gpg' -o -iname '*.asc'"
