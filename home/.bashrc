@@ -127,3 +127,4 @@ eval "$(pyenv init -)"
 export PATH="/home/horse/Komodo-IDE-10/bin:$PATH"
 
 source "$HOME/.homesick/repos/homeshick/homeshick.sh"
+source "$HOME/.homesick/repos/homeshick/completions/homeshick-completion.bash"
